@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Reserva balada</title>
+	</head>
+	<body>
+		<fieldset>
+			<legend>Ecamarotes</legend>
+			<form action="../frontHelper" method="post">
+				<h4>Seja o Rei do Camarote e reserve sua balada online!</h4><br/>
+
+				<label for="balada">Escolha a balada</label>
+				<select name="balada" id="balada">
+					<option>Rei</option>
+					<option>Rei teste1</option>
+					<option>Rei teste3</option>
+				</select>
+				<br/><br/>
+
+				<label for="nome">Informe o nome do Rei do Camarote</label>
+				<input id="nome" name="nome" type="text" required><br/><br/>
+				<label for="telefone">Informe o telefone do Rei do Camarote</label>
+				<input id="telefone" name="telefone" type="number" required><br/><br/>
+				<input type="hidden" name="servlet" value="Balada/cadastrar"/>
+				<input type="submit" value="Eu sou o Rei!!!"/>
+			</form>
+		</fieldset>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context docBase="SesssaoEstudo" 
+    	 path="/SesssaoEstudo" 
+    	 reloadable="true"
+		 source="org.eclipse.jst.j2ee.server:SesssaoEstudo">
+	<Resource name="jdbc/fa7" 
+	    	  auth="Container" 
+	    	  type="javax.sql.DataSource"
+			  maxActive="100" 
+			  maxIdle="30" 
+			  maxWait="10000" 
+			  username="postgres"
+			  password="qwe123" 
+			  driverClassName="org.postgresql.Driver"
+			  url="jdbc:postgresql://localhost:5432/fa7"/>
+</Context>
